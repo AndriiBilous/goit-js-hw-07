@@ -1,0 +1,43 @@
+.body-list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 440px;
+    border-radius: 8px;
+    padding: 24px;
+}
+.body-item{
+    background-color: #F6F6FE;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    width: 392px;
+}
+.title {
+font-family: 'Montserrat', sans-serif ;
+font-size: 24px;
+font-weight: 600;
+line-height: 32px;
+letter-spacing: 0.04em;
+margin: 0;
+}
+.animal-list{
+    padding-left: 0;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+}
+.styles-item{
+    border-radius: 4px;
+    border: solid 1px #808080;
+    padding-left: 16px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    color: #2E2F42;
+}

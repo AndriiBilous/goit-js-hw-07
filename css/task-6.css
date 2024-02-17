@@ -1,1 +1,68 @@
-.boxes{}
+.container{
+    display: flex;
+    gap: 10px;
+    background-color: #F6F6FE;
+    padding: 32px;
+    width: 486px;
+    margin-bottom: 16px;
+}
+.input-numbers{
+width: 150px;
+height: 40px;
+border-color: transparent;
+border-radius: 8px;
+border: 1px solid #808080;
+text-align: center;
+background-color: #F6F6FE;
+font-family: "Montserrat",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.04em;
+color: #2E2F42;
+}
+.btn-create{
+background-color: #4E75FF;
+width: 120px;
+height: 40px;
+border-color: transparent;
+border-radius: 8px;
+padding: 8px 16px;
+color: #FFFFFF;
+font-family: "Montserrat",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+    justify-content: center;
+}
+
+.btn-destroy{
+    background-color: #FF4E4E;
+width: 120px;
+height: 40px;
+border-color: transparent;
+border-radius: 8px;
+padding: 8px 16px;
+color: #FFFFFF;
+font-family: "Montserrat",sans-serif;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+letter-spacing: 0.04em;
+display: flex;
+align-items: center;
+    justify-content: center;
+}
+.box{
+    padding: 32px;
+    background-color: #F6F6FE;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+

@@ -8,13 +8,13 @@ const controls = document.querySelector("#controls");
 const box = document.querySelector("#boxes");
 
 controls.firstElementChild.addEventListener("input", onClick);
-let total = 0;
+let total = "";
 function onClick(avt) {
   const value = parseInt(avt.currentTarget.value);
   const max = parseInt(avt.currentTarget.max);
 
   if (value <= max) {
-    return (total = value);
+    total = value;
   } else if (value > max) {
     total = "";
   }
@@ -28,7 +28,11 @@ function createBoxes(amount) {
   for (let i = 1; i <= amount; i += 1) {
     box.insertAdjacentHTML("beforeend", stringDiv);
   }
+
   let step = 0;
+
+  // console.log(total);
+
   for (const element of box.children) {
     step += 10;
     element.style.width = `${step}px`;
@@ -36,8 +40,14 @@ function createBoxes(amount) {
     element.style.backgroundColor = getRandomHexColor();
   }
 }
+
 controls.children["1"].addEventListener("click", createBtn);
 function createBtn() {
+  if (controls.firstElementChild.value === "" || total === "") {
+    controls.firstElementChild.value = "";
+    return;
+  }
+
   createBoxes(total);
   controls.firstElementChild.value = "";
 }

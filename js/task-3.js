@@ -1,14 +1,9 @@
 const userName = document.querySelector("#name-input");
 const textUser = document.querySelector("#name-output");
 
-userName.classList.add("user-input");
-textUser.classList.add("text");
-textUser.parentElement.classList.add("text");
+userName.addEventListener("input", handleInput);
 
-console.dir();
-userName.addEventListener("input", onClick);
-
-function onClick(avt) {
+function handleInput(avt) {
   const input = avt.currentTarget;
   const value = input.value.trim();
   if (value) {

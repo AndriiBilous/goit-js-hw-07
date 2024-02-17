@@ -31,8 +31,8 @@ gallery.classList.add("list");
 
 const arrayGallery = images
   .map(
-    (image) =>
-      `<li><img src ="${image.url}" alt="${image.alt}" width="360" height="300""></li>`
+    ({ url, alt }) =>
+      `<li><img src ="${url}" alt="${alt}" width="360" height="300""></li>`
   )
   .join("");
 gallery.insertAdjacentHTML("beforeend", arrayGallery);

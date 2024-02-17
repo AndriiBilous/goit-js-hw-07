@@ -1,10 +1,19 @@
-const textInput = document.querySelector("#name-input");
-const textSpan = document.querySelector("#name-output");
+const userName = document.querySelector("#name-input");
+const textUser = document.querySelector("#name-output");
 
-// textInput.addEventListener("input", (event) => {
-//   textSpan.textContent = event.value;
-// });
-// console.log(textInput);
+userName.classList.add("user-input");
+textUser.classList.add("text");
+textUser.parentElement.classList.add("text");
 
-textInput.addEventListener("input", (event) => {});
-// console.log(textInput);
+console.dir();
+userName.addEventListener("input", onClick);
+
+function onClick(avt) {
+  const input = avt.currentTarget;
+  const value = input.value.trim();
+  if (value) {
+    textUser.textContent = value;
+  } else {
+    textUser.textContent = "Anonymous";
+  }
+}

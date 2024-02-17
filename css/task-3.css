@@ -1,0 +1,33 @@
+.user-input{
+    width: 360px;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    outline: transparent;
+    padding-left: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+}
+.user-input::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em;
+    color: #2E2F42;
+}
+.text{
+font-family: "Montserrat", sans-serif;
+font-weight: 600;
+font-size: 24px;
+line-height: 32px;
+letter-spacing: 0.04em;
+color: #2E2F42;
+}
+
+
+
+

@@ -17,7 +17,7 @@ function onSubmit(avt) {
   if (emailValue === "" || passwordValue === "") {
     alert("All form fields must be filled in");
   } else {
+    console.log(data);
     elements.reset();
   }
-  console.log(data);
 }
